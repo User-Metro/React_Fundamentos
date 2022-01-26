@@ -7,6 +7,12 @@ import api from "./apiForm.json";
 //importamos el modulo del formulario
 import Modulo from "./module.js";
 
+/* How to solve "semi-colon expected" warnings (css-semicolonexpected)
+    - npm install --save-dev stylelint stylelint-config-standard
+    OR
+    - yarn add -D stylelint stylelint-config-standard
+*/
+
 //con esto indicamos que herede las caracteristicas de Component
 class indexForm extends Component {
   //se crea una aplicacion con un estado que contiene tareas
