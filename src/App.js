@@ -1,5 +1,6 @@
 //import './App.css';
 import React, { Component, Fragment } from 'react';
+// para usar esto debes de instalar lo siguiente: npm install react-router-dom
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import Inicio from './temario/inicio.js'
@@ -8,6 +9,7 @@ import Propiedades from './temario/props.js';
 import Estado from './temario/state.js';
 import Hook from './temario/hooks.js';
 import HookState from './temario/hooks2.js';
+import Formulario from './formulario/indexForm.js'
 
 import './css/menu.css'
 
@@ -29,6 +31,8 @@ class App extends Component {
           <Link to = "/hooks">Hooks</Link>
           <br />
           <Link to = "/hookstate">Hooks v2</Link>
+          <br />
+          <Link to = "/form">Formularios</Link>
         </div>
 
         <Routes>
@@ -38,6 +42,7 @@ class App extends Component {
           <Route exact path="/state" element={<Estado />} />
           <Route exact path="/hooks" element={<Hook />} />
           <Route exact path="/hookstate" element={<HookState />} />
+          <Route exact path="/form" element={<Formulario />} />
         </Routes>
       </Router> 
     </div>
